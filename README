@@ -31,6 +31,7 @@ If goguardian realizes these domains are blocked its probably gonna try other do
 
 Unstable (suspicous activity) hosts:
 I have been seeing these domains in the logs somewhat frequently often, too suspicously often.
+So far the list contains cdn's which are probably being used to send info of ur history and everything on a file.
 domains that may be indirectly aiding goguardian in blocking by serving content and such, these are unstable and not confirmed to be used by goguardian so use this at your own risk this will probably break other websites.
 If you have the time and the balls to test these host files (stable and unstable at school with, please do and make a pr/issue so i can update the lists. And do things like confirm if the domains are used by goguardian with the help of u testers i love u very much thank u bye.
 
