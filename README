@@ -1,1 +1,20 @@
 i am still building the hosts but i will start uploading the domains but beaware more domains will probably be added okay? thank you for reading this
+
+
+Stable hosts:
+
+Stable hosts are confirmed hosts that are known to be culprits of blocking, showing your screen to those mfing annoying ass teachers who be watchin' yo ass on the computer 24/7, sending info, and potentially fetching lists that were setup by IT Department (who knows tbh).
+This basically just means that they are known domains to (potentially) be blocking things and doing other things you dont like about goguardian like showing your screen and spying on you. These domains are most likely used as analytics and other information sent to your teachers but could also possibly be used to fetch a list of domains or filter that blocks websites.
+
+I WILL BE UPDATING THE LIST AS FREQUENTLY AS I CAN.
+If goguardian realizes these domains are blocked its probably gonna try other domains so i will probably add those if i see it in logs, (if that happens) okay?
+
+Unstable (suspicous activity) hosts:
+
+domains that may be indirectly aiding goguardian in blocking by serving content and such, these are unstable and not confirmed to be used by goguardian so use this at your own risk this will probably break other websites.
+If you have the time and the balls to test these host files (stable and unstable at school with, please do and make a pr/issue so i can update the lists. And do things like confirm if the domains are used by goguardian with the help of u testers i love u very much thank u bye.
+
+JUST FOR FUN OKAY? CHILL!:
+
+So far the list only (potentially) disables safesearch, this DOES NOT MEAN that this makes it so goguardian doesnt block things you search up on google, lets say you search up "web proxy", goguardian is obv gonna block that. this list is somewhat useless because this does nothing to affect goguardian.
+This list might as well also be unstable. all this does atm is remove safesearch from google, (i think it does) nothing else. again if you are testing the lists for me thank u very much and pls make a pull request or issue that will help the lists and add more domains or help me decide if the domains on the unstable list are used by goguardian or not. The domains on the unstable list may be only used by some districts (who knows) to do things like uploading analytics to teachers and staff which is why i put drive.google.com on the unstable suspicous list.
