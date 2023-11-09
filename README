@@ -30,7 +30,7 @@ I WILL BE UPDATING THE LIST AS FREQUENTLY AS I CAN.
 If goguardian realizes these domains are blocked its probably gonna try other domains so i will probably add those if i see it in logs, (if that happens) okay?
 
 Unstable (suspicous activity) hosts:
-
+I have been seeing these domains in the logs somewhat frequently often, too suspicously often.
 domains that may be indirectly aiding goguardian in blocking by serving content and such, these are unstable and not confirmed to be used by goguardian so use this at your own risk this will probably break other websites.
 If you have the time and the balls to test these host files (stable and unstable at school with, please do and make a pr/issue so i can update the lists. And do things like confirm if the domains are used by goguardian with the help of u testers i love u very much thank u bye.
 
@@ -38,3 +38,19 @@ JUST FOR FUN OKAY? CHILL!:
 
 So far the list only (potentially) disables safesearch, this DOES NOT MEAN that this makes it so goguardian doesnt block things you search up on google, lets say you search up "web proxy", goguardian is obv gonna block that. this list is somewhat useless because this does nothing to affect goguardian.
 This list might as well also be unstable. all this does atm is remove safesearch from google, (i think it does) nothing else. again if you are testing the lists for me thank u very much and pls make a pull request or issue that will help the lists and add more domains or help me decide if the domains on the unstable list are used by goguardian or not. The domains on the unstable list may be only used by some districts (who knows) to do things like uploading analytics to teachers and staff which is why i put drive.google.com on the unstable suspicous list.
+
+
+
+First off, I am not a corrupted IT Admin, the only reason I say this is probably that when I said I look in logs you thought I was an IT Admin. NO I am not. Im just volunteering to do dumb shit like this so i can do dumb shit with chromebooks at school like playing games. 
+how do i have logs and view em? Its called a dns if u didnt know.
+Dont get it? Here is its meaning:
+
+D omain
+N ame
+S ystem
+
+So let me tell you, if you want to contribute to this too and be just like me helping make these lists for the community, just contribute. to do this simple proccess, this is what u need to do:
+
+first off fam you will need to setup a dns resolver like Pi-Hole, AdGuardHome, or any other alternative thats like those two solutions.
+
+once you setup this its straightforward, forward your dns (pihole/adguard) to the internet like i did, (port 53 udp) keep your dns server on at home (dont turn off computer or let it sleep!!), connect to it at the school with the chromebook, and bam! Just do whatever ur supposed to do during those hours minding your own buisness because fam u know once u get home you will be presented with all the logs from the chromebook seeing which domains are being resolved aka called "query log" that you can access on your dashbaord, once you got the logs you can make a pull request with the raw unedited logs or you can just give me the domains you think are the culprits of aiding goguardian or are being used by goguardian. thank you very much for contributing if you do because this is freedom for students. i wanna play coolmathgames and poki and unbloced games at school but they blocked them >:(
