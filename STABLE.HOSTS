@@ -1,12 +1,14 @@
-beacon-fullpage-predictor.goguardian.com
-x3-predictor.goguardian.com
-panther.goguardian.com
-ip.goguardian.com
-inquisition.goguardian.com
-countvoncount.goguardian.com
-quiddity.goguardian.com
-blocked.goguardian.com
-admin.goguardian.com
-goguardian.com
-ip.3322.net
-account.goguardian.com
+0.0.0.0 beacon-fullpage-predictor.goguardian.com
+0.0.0.0 x3-predictor.goguardian.com
+0.0.0.0 panther.goguardian.com
+0.0.0.0 ip.goguardian.com
+0.0.0.0 inquisition.goguardian.com
+0.0.0.0 countvoncount.goguardian.com
+0.0.0.0 quiddity.goguardian.com
+0.0.0.0 blocked.goguardian.com
+0.0.0.0 admin.goguardian.com
+0.0.0.0 goguardian.com
+0.0.0.0 ip.3322.net
+0.0.0.0 account.goguardian.com
+0.0.0.0 ext.goguardian.com
+0.0.0.0 extapi.goguardian.com
