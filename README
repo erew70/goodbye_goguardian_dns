@@ -61,7 +61,7 @@ once you setup this its straightforward, forward your dns (pihole/adguard) to th
 
 Once you have setup your own DNS server or have setup a free dns server like nextdns next thing you want to do is add all of those domains to nextdns or whatever dns you are using.
 
-on the school chromebooks sometimes they will ask fkr like a login like something@district.org ewhere you login and sign out and somebody else can use it.
+on the school chromebooks sometimes they will ask for like a login like something@district.org ewhere you login and sign out and somebody else can use it.
 on the chromebook they force it to use the network setup by IT department. if ypou have this then change the dns settings to your dns. If you cant chamge the dns of the network used by default on the chromebook use the guest wifi if they hsve that or use your own hotspot.
 once you set your dns reboot to take effect since goguardian would already be connected. you will want to connect to the network you just changed the dns settings on and login like normal and it should start working. if the managed network is forced onto your chromebook, turn off the wifi as soon as ypu can when iy logs in then turn it back pn and immediately try connecting to thaqt other wifi that has the dns settings you just set earlier and now it should work.
 
