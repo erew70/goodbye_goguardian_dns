@@ -66,4 +66,5 @@ on the chromebook they force it to use the network setup by IT department. if yp
 once you set your dns reboot to take effect since goguardian would already be connected. you will want to connect to the network you just changed the dns settings on and login like normal and it should start working. if the managed network is forced onto your chromebook, turn off the wifi as soon as ypu can when iy logs in then turn it back pn and immediately try connecting to thaqt other wifi that has the dns settings you just set earlier and now it should work.
 
 an issue however is that some websites are most likely blocked at the router level (at some districts it depends you will have to check.) but this can easily be mitigated by using a VPN server from home at the network level so you don't have to set it up manually on the chromebook.
-err_connection_reset is one of the errors probably happening because the router is blocking it not goguardian. use a vpn bozo. 
+err_connection_reset is one of the errors probably happening because the router is blocking it not goguardian. use a vpn+hotspot bozo. 
+that error also could be caused by cache and cookies so try clearing that.
