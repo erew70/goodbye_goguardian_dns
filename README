@@ -57,3 +57,13 @@ So let me tell you, if you want to contribute to this too and be just like me he
 first off you will need to setup a dns resolver like Pi-Hole, AdGuardHome, or any other alternative thats like those two solutions. (You can also use pre-hosted free resolvers like NextDns)
 
 once you setup this its straightforward, forward your dns (pihole/adguard) to the internet like i did, (port 53 udp) keep your dns server on at home (dont turn off computer or let it sleep!!), connect to it at the school with the chromebook, and bam! Just do whatever ur supposed to do during those hours minding your own buisness because once u get home you will be presented with all the logs from the chromebook seeing which domains are being resolved aka called "query log" that you can access on your dashbaord, once you got the logs you can make a pull request with the raw unedited logs or you can just put the domains you think are the culprits of aiding goguardian or are being used by goguardian. thank you very much for contributing if you do it.
+
+
+Once you have setup your own DNS server or have setup a free dns server like nextdns next thing you want to do is add all of those domains to nextdns or whatever dns you are using.
+
+on the school chromebooks sometimes they will ask fkr like a login like something@district.org ewhere you login and sign out and somebody else can use it.
+on the chromebook they force it to use the network setup by IT department. if ypou have this then change the dns settings to your dns. If you cant chamge the dns of the network used by default on the chromebook use the guest wifi if they hsve that or use your own hotspot.
+once you set your dns reboot to take effect since goguardian would already be connected. you will want to connect to the network you just changed the dns settings on and login like normal and it should start working. if the managed network is forced onto your chromebook, turn off the wifi as soon as ypu can when iy logs in then turn it back pn and immediately try connecting to thaqt other wifi that has the dns settings you just set earlier and now it should work.
+
+an issue however is that some websites are most likely blocked at the router level (at some districts it depends you will have to check.) but this can easily be mitigated by using a VPN server from home at the network level so you don't have to set it up manually on the chromebook.
+err_connection_reset is one of the errors probably happening because the router is blocking it not goguardian. use a vpn bozo. 
