@@ -13,3 +13,6 @@
 0.0.0.0 ext.goguardian.com
 0.0.0.0 extapi.goguardian.com
 0.0.0.0 snat.goguardian.com
+0.0.0.0 waluigi.goguardian.com
+0.0.0.0 x3-policy-maker.goguardian.com
+0.0.0.0 ws-goguardian.pusher.com
