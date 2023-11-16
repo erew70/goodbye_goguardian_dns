@@ -1,5 +1,5 @@
 # GoodBye GoGuardian (DNS Server)
-
+   (GoGuardian only)
    A hosts list that when added to the DNS used by an ordinary school Chromebook, will              completely remove the GoGuardian extension until reboot (you will have to change DNS again)
  ---
  ## Status
@@ -9,6 +9,7 @@
   
 ## To do:
 🟡 Host public dns server.
+
 🟡 Finish the list (still gathering new information and domains from logs)
 
 ---
@@ -39,8 +40,7 @@
     - Monitoring
     - Safety
 
-  So when you bootup your chromebook and login to your school account, your chromebook will send a request to this domain. When succesful, the domain will put the GoGuardian Extension on your chromebook. Meaning that this domain is used specifically to host the extension for schools. e
-  Every GoGuardian Extension uses this domain. However, each and every school/district is given a different and unique GoGuardiam Extension. What makes each one stand out and unique is that the Extension ID is different from school to school because the software is paid. Which is why most scripts you find online that uses an extension ID specifically to disable goguardian will most likely not work. Every school/district has their own uniaue GoGuardian Extension ID. My theory on the purpose of a unique ID is to check if it has been paid or pirated, may also be unique to link the extension and admin account to a specific district/school during setup. Pirated GoGuardian Extensions probably serve no use because they are likely linked to a specific district/schoool admin account where all the filtering happems and monitoring with that specific admin account. So in short you have little to no control over a pirated copy at all.
+  So when you bootup your chromebook and login to your school account, your chromebook will send a request to this domain. When succesful, the domain will put the GoGuardian Extension on your chromebook.
 
 10. **extapi.goguardian.com**: This domain likely refers to the API (Application Programming Interface) used by GoGuardian. APIs allow different software systems to communicate with each other. In the context of GoGuardian, the API likely facilitates data exchange between the GoGuardian platform and the extensions installed on student devices (explained further in 9).
 
@@ -58,6 +58,8 @@ Stable hosts are confirmed hosts that are known to be used by GoGuardian. Make a
 
 I WILL BE UPDATING THE LIST AS FREQUENTLY AS I CAN.
 If goguardian realizes these domains are blocked its probably gonna try other domains so i will probably add those if i see it in logs. (if that happens)
+
+This works so far so PLEASE do not try to use scripts or other methods. Scripts are probably patched by now and won't work, you will be wasting your own time. Things like the IncognitoDNS do work till this very day, however this method forces you to use a special unblocked browser and unblocked web proxy while everything else is blocked. The only way you can access websites is through there which isnt as reliable whereas the point is to disable/bypass GoGuardian. This list only disables GoGuardian so everything else works as normal.
 
 ## Unstable (suspicous activity) hosts:
 
