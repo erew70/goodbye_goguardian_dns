@@ -1,3 +1,7 @@
+
+
+<img width="250px" src="https://o.remove.bg/downloads/b635ba4c-6df1-4135-a1ea-f70df0827cd1/Screenshot_20231115-185031_FlipaClip-removebg-preview.png">
+
 # GoodBye GoGuardian (DNS Server)
    (GoGuardian only)
    A hosts list that when added to your DNS server, will completely remove the GoGuardian extension on your Chromebook until reboot (you will have to change DNS back too)
