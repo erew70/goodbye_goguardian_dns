@@ -1,4 +1,4 @@
-# GoodBye GoGuardian
+# e
 
 A hosts list that when added to the DNS used by an ordinary school Chromebook, will completely remove the GoGuardian extension until reboot (you will have to change DNS again)
 
