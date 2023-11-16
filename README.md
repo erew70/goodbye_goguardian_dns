@@ -8,7 +8,7 @@
 ---
   
 ## To do:
-🟡 Host public dns server. (For now you will have to host your own DNS server and add the list to it. Then you will have to change the dns servers on the chromebook to use your server. You can also use something like NextDNS)
+🟡 Host public dns server. (For now you will have to host your own DNS server and add our list to your server. Then you will have to change the dns servers on the chromebook to use your server. You can also use something like NextDNS)
 
 🟡 Finish the list (still gathering new information and domains from logs)
 
@@ -33,7 +33,7 @@
 
 7. **quiddity.goguardian.com**: The specific function of this domain is not clear from the available information, but it's part of the GoGuardian suite.
 
-8: **blocked.goguardian.com**: oh wait why is this on here? im pretty sure any student who has suffered the pain of goguardian knows what this is! BOOO! U STINK, FATTY WEBSITE!
+8: **blocked.goguardian.com**: The domain is used as a block page. If you see a blocked page even after setting up your own DNS server and adding our list, your doing something wrong.
 
 9. **ext.goguardian.com**: This domain corresponds to the GoGuardian Extension. Here are the main purposes of this domain:
     - Filtering
@@ -49,25 +49,32 @@
 ---
 
 ## Stable hosts:
-
 Stable hosts are confirmed hosts that are known to be used by GoGuardian. Make a PR if you have new ones.
 
 ---
 
 ## FYI
-
 I WILL BE UPDATING THE LIST AS FREQUENTLY AS I CAN.
 If goguardian realizes these domains are blocked its probably gonna try other domains so i will probably add those if i see it in logs. (if that happens)
 
 This works so far so PLEASE do not try to use scripts or other methods. Scripts are probably patched by now and won't work, you will be wasting your own time. Things like the IncognitoDNS do work till this very day, however this method forces you to use a special unblocked browser and unblocked web proxy while everything else is blocked. The only way you can access websites is through there which isnt as reliable whereas the point is to disable/bypass GoGuardian. This list only disables GoGuardian so everything else works as normal.
 
 ## Unstable (suspicous activity) hosts:
-
 So far these domains are cdns only. However I have reason to believe that these may be used since I see these too often. The stable hosts does the job for me so this is probably useless atm. Make a PR if you know more about these domains and if anything should be removed or added.
 
 ## For Fun hosts:
-
 So far the only thing this does is potentially disable SafeSearch. I haven't tested it and I am using most of my free time to focus on Stable and Unstable hosts. If you have new domains make a PR.
 
 ## Contributing
 You can host your own dns server and set it as your dns at school on the Chromebook your using to log domains in the query log so I can add any new ones that popup from your query log (At the moment I do not see any new ones popping up for me) to the list if there is any. You could also use something like NextDNS. Needs to have a query log at the very least. I only want the domain names/ip addresses of the domains, nothing else. Once you have the domains or log make a PR and I will check if there is any new ones and add them.
+
+
+## Notes for you
+1. To add GoGuardian back you will have to change the dns back and reboot. (Changing wifi networks or dns settings and reopening Chrome will do nothing! So you can change wifi networks and GoGuardian will still be removed, until you reboot.)
+
+2. Do not change wifi network right after you login. For this method to take effect you will have to wait until everything loads. Then you can switch wifi networks.
+
+3. If you get "err_connection_reset" even if you disabled goguardian this is likely to do with proxy settings specifically on the browser or the school wifi firewall. I do not know a workaround yet you are gonna have to figure it out yourself. (For me its an issue with a proxy server that was setup by my school at the browser level, it could also be at the network level)
+Maybe try blocking the ip of the proxy server with your own dns server.
+
+4. When you login your chromebook might try force a connection to a managed/school wifi even though you were just connected a second ago to the one with custom dns settings. So the second your logged in, (takes 10-15 secs) before everything is loaded/starts loading, turn off wifi, wait till its finished loading as much as it can with wifi off, then turn on wifi and connect to the network with custom dns settings as fast as you can, everything should be unblocked. Enjoy!
