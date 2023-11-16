@@ -1,20 +1,19 @@
-# e
+# GoodBye GoGuardian (DNS Server)
 
-A hosts list that when added to the DNS used by an ordinary school Chromebook, will completely remove the GoGuardian extension until reboot (you will have to change DNS again)
+   A hosts list that when added to the DNS used by an ordinary school Chromebook, will              completely remove the GoGuardian extension until reboot (you will have to change DNS again)
+ ---
+ ## Status
+   🟢 ✅: The host list is working and has been tested to remove goguardian. The hosts list is  working. The hosts lists removes GoGuardian (until reboot) from extensions installed on the  Chromebook making it completely unblocked. 
 
-🟢 UPDATE: ✅ The hosts list is working. The hosts lists removes GoGuardian from extensions installed on the Chromebook making it completely unblocked. The reason shy this happens specifically is because this hosts list in particular blocks the domain used to go and get the extension so it can put it on the chtomebook, this all happens at boot. If you block the domain it cant put the extension on your computer at boot thus removing it entirely. Changing wifi networks wont undo this, you will have to reboot.
-Make sure you are using the wifi network with the custom dns settings at all times until after you login and wait a minute or 2 to confirm the GoGuardian Extsnsion isnt on your computer anymore. You canthen turn off the dns or switch wifi networks. However the school wifi dns prpobably logs everything you do so its best to stick to that dns until you reboot.
-If you get "err_connection_reset" even if you disabled goguardian this is likely to do with proxy settings specifically on the browser or the school wifi firewall. I do not know a workaround yet you are gonna have to figure it out yourself. (For me its an issue with a proxy setup by my school)
-Maybe try blocking the ip of the proxy server with your own dns server at boot. Might work but i have never tested so proceed with caution.
-Also, when you login your chromebook will probably force a connection to a managed/school wifi. the second you login. So when the banner image appears kr any sign you have sucessfully logged in before it shows your apps and everythinf, turn off wifi, wait till ita finished logging in, then turn on wifi and connect to the network with the nrewly modified dns settings as fast as you can.
+---
+  
+## To do:
+🟡 Host public dns server.
+🟡 Finish the list (still gathering new information and domains from logs)
 
-I will try to host my own dns so you guys dont have to so it makes this method easier to use.
+---
 
-i am still building the hosts but i will start uploading the domains but beaware more domains will probably be added (thank you for reading this)
-
-
-
-INFORMATION ABOUT SOME BUT NOT LIMITED TO THESE CONFIRMED DOMAINS AND WHAT THEY DO!!:
+## INFORMATION ABOUT SOME BUT NOT LIMITED TO THESE CONFIRMED DOMAINS AND WHAT THEY DO!!:
 
 
 
@@ -47,45 +46,26 @@ INFORMATION ABOUT SOME BUT NOT LIMITED TO THESE CONFIRMED DOMAINS AND WHAT THEY 
 
 11. **ws-goguardian.pusher.com**: This domain is related to Pusher, a websocket client used by GoGuardian. It facilitates real-time communication between GoGuardian extensions and the central GoGuardian platform. Essentially, it allows the extensions to send and receive data efficiently
 
-Stable hosts:
+---
 
-Stable hosts are confirmed hosts that are known to be culprits of blocking, showing your screen 24/7, sending info, and potentially fetching lists that were setup by IT Department (who knows tbh).
-This basically just means that they are known domains to (potentially) be blocking things and doing other things you dont like about goguardian like showing your screen and spying on you. These domains are most likely used as analytics and other information sent to your teachers but could also possibly be used to fetch a list of domains or filter that blocks websites.
+## Stable hosts:
+
+Stable hosts are confirmed hosts that are known to be used by GoGuardian. Make a PR if you have new ones.
+
+---
+
+## FYI
 
 I WILL BE UPDATING THE LIST AS FREQUENTLY AS I CAN.
-If goguardian realizes these domains are blocked its probably gonna try other domains so i will probably add those if i see it in logs, (if that happens) okay?
+If goguardian realizes these domains are blocked its probably gonna try other domains so i will probably add those if i see it in logs. (if that happens)
 
-Unstable (suspicous activity) hosts:
-I have been seeing these domains in the logs somewhat frequently often, too suspicously often.
-So far the list contains cdn's which are probably being used to send info of ur history and everything on a file.
-domains that may be indirectly aiding goguardian in blocking by serving content and such, these are unstable and not confirmed to be used by goguardian so use this at your own risk this will probably break other websites.
-If you have the time to test these host files (stable and unstable) at school, please do and make a pr/issue so i can update the lists. And do things like confirm if the domains are used by goguardian.
+## Unstable (suspicous activity) hosts:
 
-JUST FOR FUN OKAY? CHILL!:
+So far these domains are cdns only. However I have reason to believe that these may be used since I see these too often. The stable hosts does the job for me so this is probably useless atm. Make a PR if you know more about these domains and if anything should be removed or added.
 
-So far the list only (potentially) disables safesearch, this DOES NOT MEAN that this makes it so goguardian doesnt block things you search up on google, lets say you search up "web proxy", goguardian is obv gonna block that. this list is somewhat useless because this does nothing to affect goguardian.
-This list might as well also be unstable. all this does atm is remove safesearch from google, (i think it does) nothing else. again if you are testing the lists thank u very much and pls make a pull request or issue that will help the lists and add more domains or help me decide if the domains on the unstable list are used by goguardian or not. The domains on the unstable list may be only used by some districts (who knows) to do things like uploading analytics to teachers and staff which is why i put drive.google.com on the unstable suspicous list.
+## For Fun hosts:
 
-how do i see these "logs"?
-i use a dns, if u dont get it here is meaning:
+So far the only thing this does is potentially disable SafeSearch. I haven't tested it and I am using most of my free time to focus on Stable and Unstable hosts. If you have new domains make a PR.
 
-D **omain**
-N **ame**
-S **ystem**
-
-So let me tell you, if you want to contribute to this too and be just like me helping make these lists for the repository, just contribute. to do this simple proccess, this is what u need to do:
-
-first off you will need to setup a dns resolver like Pi-Hole, AdGuardHome, or any other alternative thats like those two solutions. (You can also use pre-hosted free resolvers like NextDns)
-
-once you setup this its straightforward, forward your dns (pihole/adguard) to the internet like i did, (port 53 udp) keep your dns server on at home (dont turn off computer or let it sleep!!), connect to it at the school with the chromebook, and bam! Just do whatever ur supposed to do during those hours minding your own buisness because once u get home you will be presented with all the logs from the chromebook seeing which domains are being resolved aka called "query log" that you can access on your dashbaord, once you got the logs you can make a pull request with the raw unedited logs or you can just put the domains you think are the culprits of aiding goguardian or are being used by goguardian. thank you very much for contributing if you do it.
-
-
-Once you have setup your own DNS server or have setup a free dns server like nextdns next thing you want to do is add all of those domains to nextdns or whatever dns you are using.
-
-on the school chromebooks sometimes they will ask for like a login like something@district.org ewhere you login and sign out and somebody else can use it.
-on the chromebook they force it to use the network setup by IT department. if ypou have this then change the dns settings to your dns. If you cant chamge the dns of the network used by default on the chromebook use the guest wifi if they hsve that or use your own hotspot.
-once you set your dns reboot to take effect since goguardian would already be connected. you will want to connect to the network you just changed the dns settings on and login like normal and it should start working. if the managed network is forced onto your chromebook, turn off the wifi as soon as ypu can when iy logs in then turn it back pn and immediately try connecting to thaqt other wifi that has the dns settings you just set earlier and now it should work.
-
-an issue however is that some websites are most likely blocked at the router level (at some districts it depends you will have to check.) but this can easily be mitigated by using a VPN server from home at the network level so you don't have to set it up manually on the chromebook.
-err_connection_reset is one of the errors probably happening because the router is blocking it not goguardian. use a vpn+hotspot bozo. 
-that error also could be caused by cache and cookies so try clearing that.
+## Contributing
+You can host your own dns server and set it as your dns at school on the Chromebook your using to log domains in the query log so I can add any new ones that popup from your query log (At the moment I do not see any new ones popping up for me) to the list if there is any. You could also use something like NextDNS. Needs to have a query log at the very least. I only want the domain names/ip addresses of the domains, nothing else. Once you have the domains or log make a PR and I will check if there is any new ones and add them.
