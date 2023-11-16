@@ -4,8 +4,6 @@ If you get "err_connection_reset" even if you disabled goguardian this is likely
 Maybe try blocking the ip of the proxy server with your own dns server at boot. Might work but i have never tested so proceed with caution.
 Also, when you login your chromebook will probably force a connection to a managed/school wifi. the second you login. So when the banner image appears kr any sign you have sucessfully logged in before it shows your apps and everythinf, turn off wifi, wait till ita finished logging in, then turn on wifi and connect to the network with the nrewly modified dns settings as fast as you can.
 
-If you setup a vpn server at home on a computet and then connect to it at school then host a hotspot at school with your vpn on and use a dns server with this list, with the vpn on the network level with the hotspot then connecting to the hotspot at school is ypur best bet for this to work the very best and very well.
-
 
 i am still building the hosts but i will start uploading the domains but beaware more domains will probably be added (thank you for reading this)
 
