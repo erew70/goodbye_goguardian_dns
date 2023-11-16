@@ -4,6 +4,7 @@ If you get "err_connection_reset" even if you disabled goguardian this is likely
 Maybe try blocking the ip of the proxy server with your own dns server at boot. Might work but i have never tested so proceed with caution.
 Also, when you login your chromebook will probably force a connection to a managed/school wifi. the second you login. So when the banner image appears kr any sign you have sucessfully logged in before it shows your apps and everythinf, turn off wifi, wait till ita finished logging in, then turn on wifi and connect to the network with the nrewly modified dns settings as fast as you can.
 
+I will try to host my own dns so you guys dont have to so it makes this method easier to use.
 
 i am still building the hosts but i will start uploading the domains but beaware more domains will probably be added (thank you for reading this)
 
@@ -38,8 +39,9 @@ INFORMATION ABOUT SOME BUT NOT LIMITED TO THESE CONFIRMED DOMAINS AND WHAT THEY 
   So when you bootup your chromebook and login to your school account, your chromebook will send a request to this domain. When succesful, the domain will put the GoGuardian Extension on your chromebook. Meaning that this domain is used specifically to host the extension for schools. e
   Every GoGuardian Extension uses this domain. However, each and every school/district is given a different and unique GoGuardiam Extension. What makes each one stand out and unique is that the Extension ID is different from school to school because the software is paid. Which is why most scripts you find online that uses an extension ID specifically to disable goguardian will most likely not work. Every school/district has their own uniaue GoGuardian Extension ID. My theory on the purpose of a unique ID is to check if it has been paid or pirated, may also be unique to link the extension and admin account to a specific district/school during setup. Pirated GoGuardian Extensions probably serve no use because they are likely linked to a specific district/schoool admin account where all the filtering happems and monitoring with that specific admin account. So in short you have little to no control over a pirated copy at all.
 
-10. **extapi.goguardian.com**: This domain likely refers to the **API (Application Programming Interface)** used by GoGuardian. APIs allow different software systems to communicate with each other. In the context of GoGuardian, the API likely facilitates data exchange between the GoGuardian platform and the extensions installed on student devices (explained further in 9).
+10. **extapi.goguardian.com**: This domain likely refers to the API (Application Programming Interface) used by GoGuardian. APIs allow different software systems to communicate with each other. In the context of GoGuardian, the API likely facilitates data exchange between the GoGuardian platform and the extensions installed on student devices (explained further in 9).
 
+11. **ws-goguardian.pusher.com**: This domain is related to Pusher, a websocket client used by GoGuardian. It facilitates real-time communication between GoGuardian extensions and the central GoGuardian platform. Essentially, it allows the extensions to send and receive data efficiently
 
 Stable hosts:
 
