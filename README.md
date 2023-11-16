@@ -21,7 +21,7 @@
 
 1. **beacon-fullpage-predictor.goguardian.com**: This domain is related to GoGuardian Beacon, a student safety solution designed to notify designated staff about online activity that indicates a risk of suicide, self-harm, or possible harm to others. (this basically is used by teachers to tell if youre using websites they dont want you to be on atm like games)
 
-2. **x3-predictor.goguardian.com**: While specific information about this domain is not readily available, it's likely related to GoGuardian's predictive algorithms, given the term "predictor" in the domain name. (this shit probably means goguardian is smart and has got some algorithims it uses to tell if ur gonna visit some website or smth like music)
+2. **x3-predictor.goguardian.com**: While specific information about this domain is not readily available, it's likely related to GoGuardian's predictive algorithms, given the term "predictor" in the domain name. (this probably means goguardian has some algorithims that are used to determine if it should block this website, for example if you search web proxy goguardian will block it and check if it should be blocked using algorithms. It checks if it should be blocked using its algorithim. Kind of like an extension ad blocker)
 
 3. **panther.goguardian.com**: Specific information about this domain is not readily available, but it's part of the GoGuardian suite, which provides tools for filtering and monitoring online activity, classroom management, and student safety.
 
