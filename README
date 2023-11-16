@@ -1,7 +1,7 @@
 🟢 UPDATE: ✅ The hosts list is working. The hosts lists removes GoGuardian from extensions installed on the Chromebook making it completely unblocked. The reason shy this happens specifically is because this hosts list in particular blocks the domain used to go and get the extension so it can put it on the chtomebook, this all happens at boot. If you block the domain it cant put the extension on your computer at boot thus removing it entirely. Changing wifi networks wont undo this, you will have to reboot.
 Make sure you are usjng the wifi network with the custom dns settings at all times until after you login and wait a minute or 2 to confirm the GoGuardian Extsnsion isnt on your computer anymore. You canthen turn off the dns or switch wifi networks. However the school wifi dns prpobably logs everything you do so its best to stick to that dns until you reboot.
-
-
+If you get "err_connection_reset" even if you disabled goguardian this is likely to do with proxy settings specifically on the browser or the school wifi firewall. I do not know a workaround yet you are gonna have to figure it out yourself. (For me its an issue with a proxy setup by my school)
+Maybe try blocking the ip of the proxy server with your own dns server at boot. Might work but i have never tested so proceed with caution.
 
 If you setup a vpn server at home on a computet and then connect to it at school then host a hotspot at school with your vpn on and use a dns server with this list, with the vpn on the network level with the hotspot then connecting to the hotspot at school is ypur best bet for this to work the very best and very well.
 
