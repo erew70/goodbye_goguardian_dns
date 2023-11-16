@@ -1,6 +1,6 @@
 # GoodBye GoGuardian (DNS Server)
    (GoGuardian only)
-   A hosts list that when added to the DNS used by an ordinary school Chromebook, will              completely remove the GoGuardian extension until reboot (you will have to change DNS again)
+   A hosts list that when added to your DNS server, will completely remove the GoGuardian extension on your Chromebook until reboot (you will have to change DNS back too)
  ---
  ## Status
    🟢 ✅: The host list is working and has been tested to remove goguardian. The hosts list is  working. The hosts lists removes GoGuardian (until reboot) from extensions installed on the  Chromebook making it completely unblocked. 
@@ -8,7 +8,7 @@
 ---
   
 ## To do:
-🟡 Host public dns server.
+🟡 Host public dns server. (For now you will have to host your own DNS server and add the list to it. Then you will have to change the dns servers to use your server. You can also use something like NextDNS)
 
 🟡 Finish the list (still gathering new information and domains from logs)
 
