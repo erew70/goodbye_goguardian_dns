@@ -1,4 +1,5 @@
-🟢 UPDATE: ✅ The hosts list is working!!! I have tested it multiple times go guardian cant block anything and i can access things like discord and web proxies.
+🟢 UPDATE: ✅ The hosts list is working. The hosts lists removes GoGuardian from extensions installed on the Chromebook making it completely unblocked. The reason shy this happens specifically is because this hosts list in particular blocks the domain used to go and get the extension so it can put it on the chtomebook, this all happens at boot. If you block the domain it cant put the extension on your computer at boot thus removing it entirely. Changing wifi networks wont undo this, you will have to reboot.
+Make sure you are usjng the wifi network with the custom dns settings at all times until after you login and wait a minute or 2 to confirm the GoGuardian Extsnsion isnt on your computer anymore. You canthen turn off the dns or switch wifi networks. However the school wifi dns prpobably logs everything you do so its best to stick to that dns until you reboot.
 
 
 
@@ -10,6 +11,8 @@ i am still building the hosts but i will start uploading the domains but beaware
 
 
 INFORMATION ABOUT SOME BUT NOT LIMITED TO THESE CONFIRMED DOMAINS AND WHAT THEY DO!!:
+
+
 
 
 1. **beacon-fullpage-predictor.goguardian.com**: This domain is related to GoGuardian Beacon, a student safety solution designed to notify designated staff about online activity that indicates a risk of suicide, self-harm, or possible harm to others. (this basically is used by teachers to tell if youre using websites they dont want you to be on atm like games)
@@ -27,6 +30,17 @@ INFORMATION ABOUT SOME BUT NOT LIMITED TO THESE CONFIRMED DOMAINS AND WHAT THEY 
 7. **quiddity.goguardian.com**: The specific function of this domain is not clear from the available information, but it's part of the GoGuardian suite.
 
 8: **blocked.goguardian.com**: oh wait why is this on here? im pretty sure any student who has suffered the pain of goguardian knows what this is! BOOO! U STINK, FATTY WEBSITE!
+
+9. **ext.goguardian.com**: This domain corresponds to the GoGuardian Extension. Here are the main purposes of this domain:
+    - Filtering
+    - Monitoring
+    - Safety
+
+  So when you bootup your chromebook and login to your school account, your chromebook will send a request to this domain. When succesful, the domain will put the GoGuardian Extension on your chromebook. Meaning that this domain is used specifically to host the extension for schools. e
+  Every GoGuardian Extension uses this domain. However, each and every school/district is given a different and unique GoGuardiam Extension. What makes each one stand out and unique is that the Extension ID is different from school to school because the software is paid. Which is why most scripts you find online that uses an extension ID specifically to disable goguardian will most likely not work. Every school/district has their own uniaue GoGuardian Extension ID. My theory on the purpose of a unique ID is to check if it has been paid or pirated, may also be unique to link the extension and admin account to a specific district/school during setup. Pirated GoGuardian Extensions probably serve no use because they are likely linked to a specific district/schoool admin account where all the filtering happems and monitoring with that specific admin account. So in short you have little to no control over a pirated copy at all.
+
+10. **extapi.goguardian.com**: This domain likely refers to the **API (Application Programming Interface)** used by GoGuardian. APIs allow different software systems to communicate with each other. In the context of GoGuardian, the API likely facilitates data exchange between the GoGuardian platform and the extensions installed on student devices (explained further in 9).
+
 
 Stable hosts:
 
