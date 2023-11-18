@@ -52,6 +52,15 @@
 
 ---
 
+## TofSync
+Now while you could just desync everything on the Chromebook and restart, that might not work. Unless your assigned a specific Chromebook where you can add accounts. As for me, my school has a login screen, you don't add any accounts you just go straight to the google login screen where you enter your email and password then it logs in, and once you restart, your account is removed, your logged out, everything is gone until you log back on, which this allows other students to use the same Chromebook. Even if you tried Desyncing everything, restarting, and logging back in, everything will still Sync. That is where the TofSync list comes in.
+So what is TofSync??!?!
+TofSync is a new method that prevents Google from syncing anything from your account to the Chromebook, thus effectively removing any other extension blockers such as GoGuardian, Securly, ClassDojo, etc, etc.
+The benefit of this is not only just removing all Extensions, but it will also hide your history. If you have a Chromebook that removes your account completely after restarting, then this will hide your history and once you reboot it can never be recovered or stored since all account data that is stored locally is removed after a reboot. The only way to save the history is if you were to turn off the DNS or remove the hosts list then try syncing again and that will save your history. If you have a Chromebook that allows you to add accounts only and are saved after reboot, then the only way to keep your history hidden is if you keep the DNS on, assuming you cannot clear your history then turn off the DNS, once you turn it on your history is hidden and canoot be synced since your account is not synced, and if you can't clear history then the only way to keep it hidden is using the DNS forever, unless you want it to be synced then all of your history is synced and now they can see it. Let me make this clear, this method **DOES NOT DELETE YOUR HISTORY**, it only prevents the Chromebook from syncing any history that would be seen if another person were to login to your account and check your history. So if another person lets say, your teacher, were to login to your account from her computer, she wouldn't see any of the history that is locally stored and hidden on the Chromebook, since all data like bookmaarks, shortcuts, and history are saved on your account on Google servers, But if your Chromebook can't sync any of that data from and to those Google Servers, then nothing is saved. And your recent history would only be able to be seen on the Chromebook you were using. If you have a Chromebook you use at school that does not save your account and account data after reboot and instead just removes everything, you wont have to worry about this since it only takes 1 reboot to remove everything and now whatever you just did is forever hidden. 
+
+
+---
+
 ## Stable hosts:
 Stable hosts are confirmed hosts that are known to be used by GoGuardian. Make a PR if you have new ones.
 
