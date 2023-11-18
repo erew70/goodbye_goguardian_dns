@@ -1,6 +1,7 @@
 
 
-<img width="250px" src="https://o.remove.bg/downloads/b635ba4c-6df1-4135-a1ea-f70df0827cd1/Screenshot_20231115-185031_FlipaClip-removebg-preview.png">
+![No Guardians Allowed Here! (Disconnected) You left your class! Goodbye!](https://github.com/githubissocool/goodbye_goguardian_dns/blob/main/ng.png?raw=true)
+
 
 # GoodBye GoGuardian (DNS Server)
    (GoGuardian only)
