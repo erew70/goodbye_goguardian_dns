@@ -1,6 +1,6 @@
 
 
-(https://github.com/githubissocool/goodbye_goguardian_dns/blob/main/ng.png?raw=true)
+![](https://github.com/githubissocool/goodbye_goguardian_dns/blob/main/ng.png?raw=true)
 
 
 # GoodBye GoGuardian (DNS Server)
