@@ -15,7 +15,7 @@
 ## To do:
 🟡 Host public dns server. (For now you will have to host your own DNS server and add our list to your server. Then you will have to change the dns servers on the chromebook to use your server. You can also use something like NextDNS)
 
-🟡 Finish the list (still gathering new information and domains from logs)
+🟡 Finish the list(s) (still gathering new information and domains from logs)
 
 ---
 
