@@ -57,10 +57,9 @@
 Now while you could just desync everything on the Chromebook and restart, that might not work. Unless your assigned a specific Chromebook where you can add accounts. As for me, my school has a login screen, you don't add any accounts you just go straight to the google login screen where you enter your email and password then it logs in, and once you restart, your account is removed, your logged out, everything is gone until you log back on, which this allows other students to use the same Chromebook. Even if you tried Desyncing everything, restarting, and logging back in, everything will still Sync. That is where the TofSync list comes in.
 
 ---
-
 So what is TofSync??!?!
 
----
+
 TofSync is a new method that prevents Google from syncing anything from your account to the Chromebook, thus effectively removing any other extension blockers such as GoGuardian, Securly, ClassDojo, etc, etc, until you change the DNS back and sync everything. **If you would like to remove TofSync, change the DNS servers and reboot!**
 
 ---
