@@ -1,6 +1,6 @@
 
 
-![No Guardians Allowed Here! (Disconnected) You left your class! Goodbye!](https://github.com/githubissocool/goodbye_goguardian_dns/blob/main/ng.png?raw=true)
+(https://github.com/githubissocool/goodbye_goguardian_dns/blob/main/ng.png?raw=true)
 
 
 # GoodBye GoGuardian (DNS Server)
