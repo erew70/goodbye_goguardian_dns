@@ -106,4 +106,4 @@ Maybe try blocking the ip of the proxy server with your own dns server.
 
 4. When you login your chromebook might try force a connection to a managed/school wifi even though you were just connected a second ago to the one with custom dns settings. So the second your logged in, (takes 10-15 secs) before everything is loaded/starts loading, turn off wifi, wait till its finished loading as much as it can with wifi off, then turn on wifi and connect to the network with custom dns settings as fast as you can, everything should be unblocked. Enjoy!
 
-5. **DO NOT CHANGE DNS SERVERS** while you are using TofSync, or else everything will sync and the method won't work anymore and you will have to change them again, reboot, and log back in, again.
+5. **DO NOT CHANGE DNS SERVERS** while you are using TofSync, or else everything will sync and the method won't work anymore and you will have to change the DNS Servers again, reboot, and log back in, again.
